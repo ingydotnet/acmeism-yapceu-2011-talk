@@ -33,7 +33,7 @@ Tuesday, August 16, 2011
 * Father of Acmeism
 * I have one Acmeist follower:
   * Nick Patch
-* Not Easily Discouraged
+* I'm Not Easily Discouraged
 
 ----
 == WTF is Acmeism?
@@ -96,7 +96,7 @@ sharable across languages and communities.
 ----
 == Why Acmeism is Important to Perl
 
-+* The Perl Community has 2 Langauges
++* The Perl Community has 2 Languages
 +* We need to do things that help both
 +* Everything you do,
    Every great idea you have
@@ -116,7 +116,7 @@ sharable across languages and communities.
 +* At Once!
 +* Every Day!
 
-* I would like to have 1000 modules in every language!
++* I would like to have 1000 modules in every language!
 
 ----
 == How Can I Do That?
@@ -180,6 +180,7 @@ C'Dent lets you compile modules to:
 ----
 == C'Dent Live Demo Time!
 
+* > cdent --help
 * Show Python Code
 * Show Error Reporting
 
@@ -188,8 +189,10 @@ C'Dent lets you compile modules to:
 
 * C'Dent was named after my friend, Chris Dent
 * aka cdent
+
 * I bought cdent.org in February 2007
 * I attended his wedding in the UK this month
+  * That's why I am here today!
 
 * C'Dent also means:
 
@@ -217,7 +220,7 @@ C'Dent lets you compile modules to:
   * I can use TAGs properly!
 
 * Python is also a pretty good language
-* And something fun and new for Ingy!
+* I find it very TMTOWTDI :)
 
 ----
 == C'Dent is Statically Typed!!
@@ -255,7 +258,7 @@ C'Dent lets you compile modules to:
 * And Everyone (Ruby, Perl, etc) will WIN!
 
 ----
-== What's Next For C'Dent?
+== What is Next For C'Dent?
 
 * Currently only support Hello World
 
@@ -343,13 +346,13 @@ end
 * Acmeism might pay off for you later
 
 ----
-== TestML - What is Next?
+== What is Next for TestML?
 
 * Common test suite for TestML
 * Implementations in every language
   * And every framework
 * Pegex based
-  * Perl 5 - TestML.pm already is
+  * Perl 5 - TestML.pm already is Pegex
 
 ----
 == Pegex - Portable Parsing from the Future
@@ -360,8 +363,12 @@ end
 
 * Pegex is a pragmatic approach
   * Perl 6 Ease of Use
-  * using PCRE compat regex engine
+  * Using PCRE compat regex engines
   * Possibly other regex engines
+
+* Regex is ubiquitous
+  * Will work almost anywhere
+  * And fast
 
 ----
 == Pegex Live Demo
@@ -372,6 +379,13 @@ end
 * Simple Way to Define Acmeist Languages and DSLs
 * Like C'Dent and TestML
 * Hopefully YAML, JSON, and JSYNC too
+
+----
+== What is Next for Pegex?
+
+* A TestML test suite
+* Needs porting to all Acmeist Languages
+* Maybe Even Perl 6!
 
 ----
 == Stardoc
@@ -401,12 +415,12 @@ end
 * Stardoc.pm
 
 ----
-== What's Next for Stardoc?
+== What is Next for Stardoc?
 
 * Everything :)
 
 ----
-== What's Next for Acmeism?
+== What is Next for Acmeism?
 
 * You Tell Me!
 * Question/Answer/Discussion
