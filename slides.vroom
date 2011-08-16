@@ -1,0 +1,418 @@
+---- config
+title: The State of the Acmeism
+indent: 5
+height: 18
+width: 69
+skip: 0
+
+---- center
+The State of the Acmeism
+
+by Ingy döt Net
+
+YAPC::Europe - Riga, Latvia
+Tuesday, August 16, 2011
+
+----
+== Ingy döt Net
+
+* Inventor of YAML
+* 100+ Perl modules on CPAN
+* More GitHub repos than anyone...
++  * In Seattle :)
+
++* Several JavaScript modules on JSAN
+* Several Python modules on PyPi
+* Even some Bash modules
+* No Ruby modules...
++  ...YET!!!
+
+----
+== Ingy döt Net
+
+* Father of Acmeism
+* I have one Acmeist follower:
+  * Nick Patch
+* Not Easily Discouraged
+
+----
+== WTF is Acmeism?
+
+* A 1910-1912 Russian Poetry Movement?
+* The Religion of Silly Modules?
+* The Love of Orange?
+
++    http://acmeism.org
+
+Acmeism is the belief that language naturally
+tends to divide people and ideas, but that
+technology can overcome this tendency.
+
+People who create technology that is not limited
+to a particular language are known as Acmeists.
+
+----
+== What Acmeism is (and isn't) About
+
+* Acmeism is about People getting together
+    regardless of their language
+* Acmeism is *not* about converting people to your language
+* Acmeism is about sharing great ideas
+* Acmeism is *not* about stealing great ideas...
++  * Unless you give them back!
+
+----
+== Whence Acmeism?
+
+I have ported a lot of code:
+
+* Perl to JavaScript   (Jemplate)
+* JavaScript to Perl   (pQuery)
+* Python to Perl       (PyYaml)
+* Perl to Python       (TestML)
+
+----
+== All Languages Are The Same
+
+* Line for line. Idiom for idiom.
+* They let people tell computers what to do.
+* OO languages all have a common set of components.
+
+----
+== Viddy Well:
+
+---- include yaml-examples
+
+----
+== Modules are Everything
+
+* Modules are the key to (Post)Modern Programming
+* They encapsulate ideas
+* All languages have the same need of modules
+
+My focus for Acmeism is to make ideas (modules)
+sharable across languages and communities.
+
+----
+== Why Acmeism is Important to Perl
+
++* The Perl Community has 2 Langauges
++* We need to do things that help both
++* Everything you do,
+   Every great idea you have
+   Should consider both
+
++* But if you are going to open your Acmeist mind...
+
++* Why stop with Perl??
+
+----
+== My Goal as an Acmeist Developer
+
+* I Want to Release a Module
++* In 12 different languages
+  * CPAN, PyPI, RubyGems, JSAN, 6PAN, Hackage,
+    npm, PEAR, Maven, CEAN, BPAN, etc
++* At Once!
++* Every Day!
+
+* I would like to have 1000 modules in every language!
+
+----
+== How Can I Do That?
+
+* C'Dent   - Acmeist Programming Language
+* TestML   - Acmeist Unit Test Framework
+* Stardoc  - Acmeist Documentation
+* Pegex    - Acmeist PEG Parser
+
+----
+== The Ingy Module Challenge
+
+* If you never published a module...
++  * Publish a module this year!
+
++* If you have never published in another language...
++  * Publish a module in a new language this year!
+
++* If you've never published a module
+  in six impossible languages...
+  every day...
+  before breakfast...
++  * Watch the rest of this talk!!!
+
+----
+== C'Dent
+
+* C'Dent == H.O.P.E
++  * Hack Once, Please Everyone
+
+* A new programming language
+* Built from old ones
+
+* C'Dent is for writing Portable Modules
+
+----
+== C'Dent Syntaxen
+
+C'Dent lets you write modules in:
+
+* Perl 6
+* Python
+* JavaScript
+
++Very strict subsets of these...
+
+----
+== C'Dent Runtimes
+
+C'Dent lets you compile modules to:
+
+* Perl 6
+* Python
+* JavaScript
+
++* Also:
+  Perl 5, Python 3, Ruby, PHP, Java
+  Scala, Go, ActionScript, PIR, NQP, pyc
+  and C'Dent (YAML)
+
+----
+== C'Dent Live Demo Time!
+
+* Show Python Code
+* Show Error Reporting
+
+----
+== Who is C'Dent?
+
+* C'Dent was named after my friend, Chris Dent
+* aka cdent
+* I bought cdent.org in February 2007
+* I attended his wedding in the UK this month
+
+* C'Dent also means:
+
+      Common'DEnomiNaTor
+
+* It finds the common, useful subset
+
+----
+== How C'Dent compilation works (Overview)
+
+* Parse - Source to AST
+
+* Analyze - Detect and Validate types
+
+    ( .cd AST form )
+
+* Emit - Create language specific modules
+
+----
+== C'Dent Implementation
+
+* C'Dent is currently a Python implementation
+
+* I chose Python because it has the best YAML support
+  * I can use TAGs properly!
+
+* Python is also a pretty good language
+* And something fun and new for Ingy!
+
+----
+== C'Dent is Statically Typed!!
+
+* OSDC Langs are dynamically, and often weakly, typed
+* AST needs exact types to generate code
+* Simple example:
+
+   if str == 'foo' or num == 42:
+   if ($str eq 'foo' or $num == 42) {
+
+* C'Dent scans the AST and assigns a type to every object
+* If it can't find the type or finds a mismatch...
+  ... it's a *compile-time* error.
+
+* At runtime there is no extra type checking
+
+----
+== C'Dent Design Goals
+
+* Find a usable OO subset
+* Reuse when possible
+  * Runtime when not possible
+* Make Foo.cd.* modules actually work.
+* Make Foo.* modules nice to read.
+* Don't use more runtime than you need.
+
+----
+== C - The Ultimate Backend
+
+* If C'Dent can compile to C
+* We get fast modules for free
+* Python -> C + SWIG -> Python
+* People will target C'Dent for easy speed
+* And Everyone (Ruby, Perl, etc) will WIN!
+
+----
+== What's Next For C'Dent?
+
+* Currently only support Hello World
+
+* Add variables
+* Loops and Conditionals
+* Methods and Calling
+* Exceptions
+
+* Release an Actual Module
++* In 12 Languages!
++* At Once!
+
+----
+== TestML - Portable Unit Tests
+
+* Think about YAML or JSON
+* Very Acmeist Modules
+* What if they all passed the exact same tests?
+
++* Then think about CPAN and 6PAN
+
+----
+# Simple Example (3 Tests)
+
+%TestML: 1.0
+
+*mixed.uppercase() == *upper;
+*mixed.lowercase() == *lower;
+
+=== Test mixed case string
+--- mixed: I Like Pie
+--- upper: I LIKE PIE
+--- lower: i like pie
+
+=== Test lower case string
+--- mixed: I Love Lucy
+--- upper: I LOVE LUCY
+
+----
+# Example TestML for C'Dent
+
+%TestML: 1.0
+
+*cd_py.compile('rb') == *rb;
+*cd_py.compile('js') == *js;
+
+=== Hello, world
+--- cd_py
+class World:
+    def greet(self):
+        print "Hello, world\n",
+--- rb
+class World
+    def greet
+        puts("Hello, world\n")
+        return
+    end
+end
+--- js
+(this.World = function() {}).prototype = {
+    greet: function() {
+        print("Hello, world");
+    }
+};
+
+----
+== TestML Live Demo
+
+* JSYNC.pm
+* TestML.pm
+* Pegex.pm
+
+----
+== Framework Agnostic
+
+* Adapts to any Test Framwork/Harness
+* Mixes well with language specific tests
+
+----
+== Test::Base
+
+* Perl5 and JavaScript data driven tests
+* TestML is a full replacement
+* Even for Perl5 only stuff
+* Acmeism might pay off for you later
+
+----
+== TestML - What is Next?
+
+* Common test suite for TestML
+* Implementations in every language
+  * And every framework
+* Pegex based
+  * Perl 5 - TestML.pm already is
+
+----
+== Pegex - Portable Parsing from the Future
+
+* The best part of Perl 6 is Rules
+  * PEG Parsing Made Simple
+  * And verrrry sloooow... :)
+
+* Pegex is a pragmatic approach
+  * Perl 6 Ease of Use
+  * using PCRE compat regex engine
+  * Possibly other regex engines
+
+----
+== Pegex Live Demo
+
+----
+== Pegex Use Cases
+
+* Simple Way to Define Acmeist Languages and DSLs
+* Like C'Dent and TestML
+* Hopefully YAML, JSON, and JSYNC too
+
+----
+== Stardoc
+
+* StarDoc is like C'Dent for Doc
+  * Write doc your way
+  * Publish it every other way
+    * Pod, ReST, Markdown, Kwim, etc
+
+----
+== Stardoc
+* Roundtripping is key
+* Built on WikiText.pm concepts
+* Perldoc.pm 
+* Perldoc 6
+
+----
+== Kwim
+
+* Based on ST
+* Wikiwyg Model (gmail)
+* Soon be a gollum language for Github
+
+----
+== Stardoc Live Demo
+
+* Stardoc.pm
+
+----
+== What's Next for Stardoc?
+
+* Everything :)
+
+----
+== What's Next for Acmeism?
+
+* You Tell Me!
+* Question/Answer/Discussion
+* Lower your Ingy-Number
+
+---- center
+The End
+
+http://acmeism.org
