@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>015</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "014.hs" + ".html";
+        return false;
+    }
+    if (keynum == 13 || keynum == 32) {
+        window.location = "016" + ".html";
+        return false;
+    }
+    if (keynum == 73 || keynum == 105) {
+        window.location = "index.html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+
+
+
+                       Modules are Everything
+     
+     * Modules are the key to (Post)Modern Programming
+     * They encapsulate ideas
+     * All languages have the same need of modules
+     
+     My focus for Acmeism is to make ideas (modules)
+     sharable across languages and communities.
+
+
+
+
+
+
+</pre>
+</body>
